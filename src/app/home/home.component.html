@@ -1,0 +1,36 @@
+<div>
+    <section class="section-background">
+        <div class="container">
+            <h2 class="page-header">
+              Flight Management
+            </h2>
+          
+        </div> <!-- /.container -->
+    </section> <!-- /.section-background -->
+    
+    <section class="offer pt-2">
+        <div class="container">
+            <h4 class="section-title">
+                Our Blazzing offers
+            </h4>
+            
+            <div class="row pt-2">
+                <div class="col-sm-2 col-xs-6 offer-div ml-2" *ngFor="let coupon of couponList">
+                    <div class="offer-item">
+                        <div class="icon">
+                            <i class="ion-social-euro"></i>
+                        </div>
+                        <h3>
+                          {{coupon.couponCode}}
+                        </h3>
+                        <p>
+                           {{coupon.amount}}
+                        </p>
+                    </div>
+                </div> 
+    
+              
+            </div> 
+        </div> 
+    </section> 
+</div>

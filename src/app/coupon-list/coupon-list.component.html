@@ -1,0 +1,46 @@
+
+
+<div class="container">
+    <div class="d-flex float-right mb-2">
+       
+      <button class="btn btn-success btn-sm" routerLink="/addCoupon">Add</button>
+          </div>
+        <table class="table table-condensed tableFixHead md-2">
+          <thead>
+            <tr>
+            
+           <th class="address">Coupon Code</th>
+           <th class="address">Description</th>
+           <th class="address">Expiry Date</th>
+           <th class="address">Amount</th>
+           <th class="action">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let coupons of couponList">
+             
+             
+                <td>
+                  {{coupons.couponCode}}
+                </td>
+                <td>
+                  {{coupons.amount}}
+                </td>
+                <td>
+                  {{coupons.expirationDate |date:'dd-MM-yyyy'}}
+                </td>
+                <td>
+                    {{coupons.couponDesc}}
+                  </td>
+                <td>
+                
+                 <button type="button"  class="btn btn-warning btn-sm ml-2"
+                 (click)="couponDelete(coupons.couponCode)">Block</button>
+               
+                </td>
+            </tr>
+           
+          </tbody>
+        </table>
+  
+  </div>

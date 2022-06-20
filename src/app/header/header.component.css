@@ -1,0 +1,86 @@
+
+
+
+.navbar-toggle {
+    background-color: rgb(96, 201, 235);
+    border: 1px solid rgb(96, 201, 235);
+    border-radius: 0;
+    transition: all .4s ease-in-out;
+}
+.navbar-default .navbar-toggle {
+    border-color: rgb(96, 201, 235);
+}
+.navbar-default .navbar-toggle .icon-bar{
+	background: #fff;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+	background: #fff;
+}
+.navbar-toggle:hover .icon-bar, .navbar-toggle:focus .icon-bar {
+    background-color: rgb(96, 201, 235);
+}
+.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+/*=================================================
+||				3. Header
+==================================================*/
+			/*navbar*/
+            .navbar-nav{
+                flex-direction: row;
+            }
+.navbar-default .navbar-brand{
+	border: 1px solid transparent;
+	color: #60c9eb;
+	font-size: 33px;
+	padding: 10px 0px;
+	height: auto;
+	font-weight: 400;
+	letter-spacing: -1px;
+	text-transform: capitalize;
+}
+ul.nav.navbar-nav.navbar-right{
+	margin-top: 10px;
+}
+.navbar-default .navbar-brand span{
+	color: #583b54;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
+	color: #60c9eb;
+}
+.navbar-default {
+    background-color: #fff;
+    border-color: transparent;
+    padding: 5px 0px;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #60c9eb;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: 1px solid transparent;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: all .4s ease-in-out;
+}
+.navbar-default .navbar-nav>li>a:hover{
+	color: #0044c1;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+	color: #0044c1;
+	background: #e8f9ff;
+}
+.navbar-nav>li>a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background-color: transparent;
+    color: #0044c1;
+    background: #e8f9ff;
+}

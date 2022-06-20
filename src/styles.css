@@ -1,1 +1,93 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+
+
+body
+{
+	font-family: 'Roboto', 'Open-Sans', sans-serif;
+	overflow-x: hidden;
+	
+}
+
+p{
+	color: #969595;
+}
+.border-radius{
+	border-radius: 0 !important;
+	border-color: #60c9eb;
+	height: 36px;
+}
+p:hover{
+	cursor: default;
+}
+.form-dropdown{
+	margin-top: -25px;
+}
+.custom-addon{
+	background: #fff;
+}
+
+.custom-button{
+	background: #60c9eb;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	font-size: 16px;
+	transition: all .4s ease-in-out;
+}
+.custom-button:hover{
+	background: #53B1DE;
+	border-color: #53B1DE;
+	color: #fff;
+}
+.input-group{
+	margin-bottom: 22px;
+}
+.jumbotron{
+	background-color: #fff;
+	 
+  margin:0;
+  }
+  a{
+	text-decoration: none;
+  }
+  
+  .tableFixHead          { overflow: auto; height: 100px; }
+  .tableFixHead thead th { position: sticky; top: 0; z-index: 1; }
+  
+  /* Just common table stuff. Really. */
+  table  { border-collapse: collapse; width: 100%; }
+  th, td { padding: 8px 16px; font-size: 13px; }
+  th     { background:#0f0e60; color:#fff }
+  
+  
+  .address{
+  width:20%;
+  }
+  .action{
+  width:30%;
+  }
+  .logo{
+	width: 10%;
+  }
+
+  .jumbotron{
+    /* background-color: #00d3cf; */
+    display: flex;
+    height:80%;
+    background-image: linear-gradient(45deg, #7d2f7e, #216bf3);
+margin:0;
+}
+.hidden{
+	display: none!important;
+}
+.rounded-3{
+    background: #fff;
+    }
+        .bg-color{
+            background-image: linear-gradient(45deg, #f3e5f5, #2175f3);
+        }
+      

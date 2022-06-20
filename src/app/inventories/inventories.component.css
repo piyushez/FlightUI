@@ -1,0 +1,27 @@
+.jumbotron{
+    background-color: #fff;
+     
+  margin:0;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  .tableFixHead          { overflow: auto; height: 100px; }
+  .tableFixHead thead th { position: sticky; top: 0; z-index: 1; }
+  
+  /* Just common table stuff. Really. */
+  table  { border-collapse: collapse; width: 100%; }
+  th, td { padding: 8px 16px; font-size: 13px; }
+  th     { background:#0f0e60; color:#fff }
+  
+  
+  .address{
+  width:20%;
+  }
+  .action{
+  width:30%;
+  }
+  .logo{
+    width: 10%;
+  }

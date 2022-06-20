@@ -1,0 +1,85 @@
+<!-- <div class="jumbotron d-flex align-items-center">
+    <div class="container col-md-5">
+<div class="card">
+    <h4 class="card-header">Login</h4>
+    <div class="card-body">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="Username">Username</label>
+                <input type="text" formControlName="Username" class="form-control border-radius border-right" [ngClass]="{ 'is-invalid': submitted && f.Username.errors }" />
+                <div *ngIf="submitted && f.Username.errors" class="invalid-feedback">
+                    <div *ngIf="f.Username.errors.required">Username is required</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Password">Password</label>
+                <input type="password" formControlName="Password" class="form-control border-radius border-right" [ngClass]="{ 'is-invalid': submitted && f.Password.errors }" />
+                <div *ngIf="submitted && f.Password.errors" class="invalid-feedback">
+                    <div *ngIf="f.Password.errors.required">Password is required</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <button  class="btn btn-primary">
+                   
+                    Login
+                </button>
+                <div class="mt-2">
+                    <p>Need an Account? <a routerLink="../register">Register</a></p>
+                           
+                </div>
+                     
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+
+ -->
+ <section class="h-100" style="background-color: #eee;">
+    <div class="container py-5 h-100 ">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-10">
+          <div class="rounded-3 text-black">
+           
+              <div class="col-lg-6 ml-auto mr-auto">
+                <div class="card-body">
+                    <div class="text-center">
+                        
+                        <h4 class="mt-1 mb-3">Login</h4>
+                      </div>
+  
+                    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                            <label for="Username">Username</label>
+                            <input type="text" formControlName="Username" class="form-control border-radius border-right" [ngClass]="{ 'is-invalid': submitted && f.Username.errors }" />
+                            <div *ngIf="submitted && f.Username.errors" class="invalid-feedback">
+                                <div *ngIf="f.Username.errors.required">Username is required</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Password">Password</label>
+                            <input type="password" formControlName="Password" class="form-control border-radius border-right" [ngClass]="{ 'is-invalid': submitted && f.Password.errors }" />
+                            <div *ngIf="submitted && f.Password.errors" class="invalid-feedback">
+                                <div *ngIf="f.Password.errors.required">Password is required</div>
+                            </div>
+                        </div>
+                       
+                            <div class="text-center pt-1 mb-3">
+                                <button class="btn btn-primary btn-block custom-button" type="submit">Log
+                                  in</button>
+                                  <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a routerLink="../register"
+                                    class="link-danger">Register</a></p>
+                              </div>
+                              
+                        
+                    </form>
+  
+                </div>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

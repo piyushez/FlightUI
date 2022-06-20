@@ -1,0 +1,45 @@
+
+<div class="container">
+    <div class="d-flex float-right mb-2">
+       
+      <button class="btn btn-success btn-sm"*ngIf="isAdmin=='true'" routerLink="../addInventory">Add</button>
+          </div>
+        <table class="table table-condensed tableFixHead md-2">
+          <thead>
+            <tr>
+           
+           <th class="address">Airline</th>
+           <th class="address">Flight Number</th>
+           <th class="address">Ticket Cost</th>
+           <th class="action">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let inventory of inventoryList">
+             
+              
+                <td>
+                  {{inventory.airlineNo}}
+                </td>
+                <td>
+                  {{inventory.flightNumber}}
+                </td>
+                <td>
+                  {{inventory.ticketCost}}
+                </td>
+                <td>
+                
+                 <button *ngIf="inventory.isBlock==0" class="btn btn-primary btn-sm ml-2" (click)="bookFlight(inventory)">Book Flight</button>
+                 <button  *ngIf="inventory.isBlock==0 && isAdmin=='true'" class="btn btn-primary btn-sm ml-2" (click)="updateInventory(inventory)">Update Inventory</button>
+                 <button *ngIf="inventory.isBlock==0  && isAdmin=='true'" class="btn btn-warning btn-sm ml-2"
+                  (click)="blockInventoryByFlight(inventory.flightNumber,'blocked')" 
+                 type="button">Block</button>
+                 <button *ngIf="inventory.isBlock==1  && isAdmin=='true'" class="btn btn-warning btn-sm ml-2" 
+                 (click)="blockInventoryByFlight(inventory.flightNumber,'unblocked')" type="button">Unblock</button>
+                </td>
+            </tr>
+           
+          </tbody>
+        </table>
+  
+  </div>

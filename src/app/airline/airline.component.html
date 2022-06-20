@@ -1,0 +1,48 @@
+
+
+<div class="container">
+  <div class="d-flex float-right mb-2">
+     
+    <button class="btn btn-success btn-sm" routerLink="../addairline">Add</button>
+        </div>
+      <table class="table table-condensed tableFixHead md-2">
+        <thead>
+          <tr>
+          <th class="logo"></th>
+         <th class="address">Airline</th>
+         <th class="address">Contact</th>
+         <th class="address">Address</th>
+         <th class="action">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let airline of airlineList">
+           
+            <td>
+                <img src="../../assets/airlineLogo/{{airline.uploadLogo}}"/>
+              </td>
+              <td>
+                {{airline.airlineNo}}
+              </td>
+              <td>
+                {{airline.contactNumber}}
+              </td>
+              <td>
+                {{airline.contactAddress}}
+              </td>
+              <td>
+              
+               <button type="button"  *ngIf="!airline.isBlock" class="btn btn-primary btn-sm ml-2"(click)="addInventory(airline.airlineNo)">Add Inventory</button>
+               <!-- <button class="btn btn-primary btn-sm ml-2">Update Inventory</button> -->
+               <button class="btn btn-warning btn-sm ml-2" *ngIf="!airline.isBlock"
+               (click)="blockAirLine(airline.airlineNo,'blocked')" type="button">Block</button>
+               <button class="btn btn-warning btn-sm ml-2" *ngIf="airline.isBlock"
+               (click)="blockAirLine(airline.airlineNo,'unblocked')" type="button">Unblock</button>
+           
+              </td>
+          </tr>
+         
+        </tbody>
+      </table>
+
+</div>

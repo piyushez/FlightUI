@@ -1,0 +1,79 @@
+.section-title{
+	color: #313131;
+	text-align: center;
+}
+
+.section-background{
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-attachment: fixed;
+	text-transform: uppercase;
+	background: url('../../assets/header.png');
+	text-align: center;
+	background-size: cover;
+}
+.page-header{
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 200;
+	border-bottom: none;
+    padding-top: 85px;
+    padding-bottom: 40px;
+    font-size: 34px;
+}
+.offer{
+	color: black;
+	text-align: center;
+	background: #f9f9f9;
+}
+.offer-item{
+	   letter-spacing: 1px;
+        padding: 2px;
+        margin: 5px 0px;
+}
+.offer-div{
+    background: #60c9eb66;
+}
+.icon{
+	padding: 20px 0;
+	font-size: 35px;
+	color: #60c9eb;
+}
+.offer-item h3{
+	padding-bottom: 40px;
+	margin: 0px;
+	font-size: 15px;
+}
+.offer-item p{
+	padding-bottom: 20px;
+	font-size: 13px;
+	line-height: 170%;
+}
+.offer-item:hover{
+	box-shadow: 0 0 30px rgba(125, 125, 125, 0.1);
+}
+
+
+@media (max-width: 991px){
+	
+	.offering{
+		padding-bottom: 300px;
+	}
+}
+@media (max-width: 480px){
+	.slider-item{
+		background-image: none !important;
+	}
+	.slide{
+		height: auto;
+	}
+	.intro{
+		max-height: 627px;
+	}
+	.navbar-default .navbar-nav>li>a{
+		font-weight: 400;
+	}
+	.navbar-default .navbar-brand{
+		padding-left: 15px;
+	}
+}

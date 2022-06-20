@@ -1,0 +1,41 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header col-md-3">
+            
+            <a class="navbar-brand" href="index.html" title="HOME">
+               Flight <span>Management</span></a>
+        </div> 
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="col-md-9">
+            <ul class="nav navbar-nav navbar-right float-right">
+                <li ><a routerLink="../home">Home</a></li>
+                <li *ngIf="LoggedIn(false)"><a routerLink="../login">Login</a></li>
+                <li  *ngIf="LoggedIn(false)"><a routerLink="../register">register</a></li>
+              
+                <li> <a  *ngIf="LoggedIn(true) && !isAdmin()" routerLink="../tickethistory" >Booking History</a>
+                  </li>
+                  <li> <a  *ngIf="LoggedIn(true) && !isAdmin()" routerLink="../searchUser" >Search</a>
+                  </li>
+                  <li>
+                    <a *ngIf=" LoggedIn(true) &&  isAdmin()" routerLink="../airlines" >Manage Airlines</a>
+                  </li>
+                  <li >
+                    <a *ngIf="LoggedIn(true) &&  isAdmin()" routerLink="../inventories" >Manage Schedules</a>
+                  </li>
+                  <li >
+                    <a *ngIf="LoggedIn(true) &&  isAdmin()" routerLink="../coupons" >Manage Discount</a>
+                  </li>
+                  <li >
+                    <a *ngIf="LoggedIn(true) &&  !isAdmin()" routerLink="../userHome" >Manage Bookings</a>
+                  </li>
+                  <li  *ngIf="LoggedIn(true)" (click)="LogOut()"><a>LogOut</a></li>
+            </ul> 
+        </div>
+      </div>
+</nav>
+
+
+
+

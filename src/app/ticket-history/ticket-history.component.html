@@ -1,0 +1,60 @@
+
+
+<div class="container">
+   
+        <table class="table table-condensed tableFixHead md-2">
+          <thead>
+            <tr>
+            
+           <th class="">Flight Number</th>
+           <th class="">Passanger Name</th>
+           <th class="">PNR</th>
+         
+           <th class="">Seat Number</th>
+           <th class="">Ticket Price</th>
+           <th class="">Cost</th>
+           <th class="">Date</th>
+           <th class="">Class</th>
+           <th class="">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let tickets of ticketHistory">
+             
+             
+                <td>
+                  {{tickets.flightNumber}}
+                </td>
+                <td>
+                  {{tickets.passengerName}}
+                </td>
+                <td>
+                    {{tickets.pnrNumber}}
+                  </td>
+                  <td>
+                    {{tickets.seatNumber}}
+                  </td>
+                <td>
+                  {{tickets.ticketCost}}
+                </td>
+                <td>
+                    {{tickets.actualCostAfterDis}}
+                  </td>
+                  <td>
+                    {{tickets.flightDate |date:'dd-MM-yyyy'}}
+                  </td>
+                  <td>
+                    {{tickets.classSeat}}
+                  </td>
+                <td>
+              
+                <button class="btn btn-primary btn-sm ml-2"(click)="downloadTicket(tickets)">Download</button>
+                <button *ngIf="displayCancelBtn(tickets)" (click)="cancelTicket(tickets)" class="btn btn-primary btn-sm ml-2">Cancel</button>
+                
+                </td>
+            </tr>
+           
+          </tbody>
+        </table>
+  
+  </div>
